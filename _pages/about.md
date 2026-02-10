@@ -1,56 +1,71 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+I'm a Research Engineer at [Reface](https://reface.ai/), where I work on [BitePal](https://bitepal.app/) — an AI calorie tracker app. I build core features end to end, focusing on multimodal alignment, synthetic data generation, and optimal technical solutions to support business requests.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I'm also a Research Fellow (RAI for Ukraine program) at the [Center for Responsible AI](https://engineering.nyu.edu/research/centers/center-responsible-ai) at [New York University](https://www.nyu.edu/), working on RL policy reusability under the supervision of [Sihem Amer-Yahia](https://scholar.google.com/citations?user=rMtUkMcAAAAJ&hl=en) and [Noha Ibrahim](https://scholar.google.com/citations?user=bmAiTSEAAAAJ&hl=en).
 
-A data-driven personal website
+Previously, I worked as a Machine Learning Engineer for one year focused on service solutions for new client engagements. Highlights include multi-agent applications with an RLHF loop, tool usage, RAG, Tree-of-Thoughts (ToT) prompting, image generation, and improvements to a multi-speaker diarization system.
+
+Research
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+My research interests sit at the intersection of multimodal AI and efficient reasoning. I’m especially interested in vision-language models, their extension toward vision-language-action systems, and the role of vision foundation models in building robust, grounded capabilities. I’m also interested in the use of small language models for agentic tasks.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
-
-Getting started
+Education
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<style>
+  .education-list { margin-top: 1.5em; }
+  .education-item { display: flex; gap: 24px; margin: 24px 0; align-items: center; }
+  .education-logo { width: 140px; height: 100px; flex: 0 0 140px; display: flex; align-items: center; justify-content: center; }
+  .education-logo img { height: 100%; width: auto; max-width: 100%; object-fit: contain; display: block; }
+  .education-title { font-weight: 600; }
+  .education-dates { opacity: 0.7; margin: 4px 0 6px; font-size: 0.95rem; }
+  .education-degree, .education-notes, .education-thesis { margin: 4px 0; }
+  @media (max-width: 600px) {
+    .education-item { flex-direction: column; }
+    .education-logo { width: 140px; }
+  }
+</style>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<div class="education-list">
+  <div class="education-item">
+    <div class="education-logo">
+      <img src="/images/edu/anhalt.svg" alt="Hochschule Anhalt logo">
+    </div>
+    <div class="education-content">
+      <div class="education-title">Hochschule Anhalt</div>
+      <div class="education-degree">Dual M.S. in Applied Mathematics and Data Science</div>
+      <div class="education-dates">Oct 2025 – Jun 2026</div>
+      <div class="education-thesis">📄 Thesis: "Mitigating Chain-of-Thought Overload in Small VLMs through RL Post-Training"</div>
+    </div>
+  </div>
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+  <div class="education-item">
+    <div class="education-logo">
+      <img src="/images/edu/NTUU_KPI_logo.png" alt="Kyiv Polytechnic Institute logo">
+    </div>
+    <div class="education-content">
+      <div class="education-title">National Technical University of Ukraine "Kyiv Polytechnic Institute"</div>
+      <div class="education-degree">Bachelor’s degree, Applied Mathematics</div>
+      <div class="education-dates">Sep 2020 – Jun 2024</div>
+      <div class="education-notes">Grade: 89/100</div>
+      <div class="education-thesis">📄 Thesis: <a href="https://ela.kpi.ua/server/api/core/bitstreams/5d32c8e4-a809-4d4b-b2ca-97edb7641655/content">Neural Differential Equations for Predicting Financial Instrument Prices: A Case Study of American Options</a></div>
+    </div>
+  </div>
+</div>
 
-**Markdown generator**
+Honors, Awards
+======
+- Awarded 3rd Place in the First Round of the All-Ukrainian Student Research Competition in Fields of Knowledge and Specialties for the 2024/2025 academic year for my bachelor’s thesis work (see [certificate](https://www.linkedin.com/in/ihor-vitenko-202458264/overlay/1745861696014/single-media-viewer/?profileId=ACoAAEDZvCIBIDiP7tRMHV76LfIYcZWQYxrxTSQ)).
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+Personal
+======
+- Sports are an inseparable part of my life: I train kickboxing, previously ran a half marathon, and rode 140 km in one day by bicycle through cities in Kyiv Oblast that suffered during the [Battle of Kyiv (2022)](https://en.wikipedia.org/wiki/Battle_of_Kyiv_(2022)).
+- I enjoy billiards (pool) and can happily spend hours practicing it.
+- I'm a huge Star Wars fan.

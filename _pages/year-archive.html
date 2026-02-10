@@ -7,6 +7,15 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
+<div class="blog-note">
+  I sometimes write about new papers and share my thoughts on them and on general AI topics on my <a href="https://www.linkedin.com/in/ihor-vitenko-202458264/"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a> profile.
+</div>
+
+<style>
+  .blog-note { font-size: 1.1rem; }
+</style>
+
+{% comment %}
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
@@ -17,3 +26,4 @@ redirect_from:
   {% endif %}
   {% include archive-single.html %}
 {% endfor %}
+{% endcomment %}
